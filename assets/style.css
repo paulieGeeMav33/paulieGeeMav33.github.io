@@ -1,0 +1,28 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --text:#e6eef6;
+  --maxw:980px;
+  --radius:8px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,system-ui,Arial;background:var(--bg);color:var(--text);line-height:1.5}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:28px}
+.site-header{border-bottom:1px solid rgba(255,255,255,0.04);padding:18px 0}
+.site-header h1{margin:0;font-size:clamp(20px,3.8vw,32px)}
+.tag{color:var(--muted);margin-top:6px}
+h2{color:var(--accent);margin-top:6px}
+.project{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:var(--radius);margin:18px 0}
+.project h3{margin:0 0 8px 0;font-size:18px}
+.project .meta{font-size:13px;color:var(--muted);margin-left:8px}
+.project ul{margin:0 0 8px 20px;color:var(--text)}
+.date{color:var(--muted);font-size:13px}
+.site-footer{border-top:1px solid rgba(255,255,255,0.04);padding:18px 0;margin-top:28px;color:var(--muted)}
+a{color:var(--accent)}
+@media (min-width:760px){
+  main{display:grid;grid-template-columns:2fr 1fr;gap:28px}
+  #projects{grid-column:1}
+  #about{grid-column:2}
+}
